@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav id="topbar">
         <h1>
             <a href="index.html">
                 <img src="images/logo_logo.png" alt="康文英語家教中心" width="30px" height="30px">
@@ -22,23 +22,96 @@
                 <span class="english-title">KAN WEN</span>
             </a>
         </h1>
-        <ul>
-            <li><a href="">表單填寫</a></li>
+        <ul id="sidebar">
+            <li><a href="#student-form">表單填寫</a></li>
             <li><a href="">聯絡我們</a></li>
         </ul>
     </nav>
-    <div class="container">
+    <main class="container">
+        <div class="main-img">
+            <img src="images/topimg.jpg" alt="nav-img" width="100%" height="auto">
+            <h2>Knowledge can change your fate, <br>
+                and English can accomplish your future.<br>
+                「知識改變命運，英文改變未來。」</h2>
+            <a href="#student-form" class="go-to-form">立即報名課程</a>
+        </div>
         <section class="orange"></section>
         <section></section>
         <section class="orange"></section>
         <section></section>
-        <section class="orange"></section>
-    </div>
+        <!-- form -->
+        <section id="student-form">
+            <h3>表單填寫</h3>
+            <form action="https://sheetdb.io/api/v1/zohu81rlheoq5" method="post" id="sheetdb-form">
+                <p>若欲報名課程、詢問相關問題，歡迎填寫以下表單，Connie老師將會與您聯繫。</p>
+                <hr>
+                <fieldset>
+                    <label for="student-name">學生姓名：</label>
+                    <input type="text" id="student-name" placeholder="請輸入學生姓名" name="data[學生姓名]" required>
+                </fieldset>
+                <fieldset>
+                    <label for="student-school">就讀學校：</label>
+                    <input type="text" id="student-school" placeholder="請輸入學生就讀學校" name="data[就讀學校]" required>
+                </fieldset>
+                <fieldset>
+                    <label for="student-grade">學生年級：</label>
+                    <select id="student-grade" name="data[學生年級]" placeholder="請選擇學生年級" required>
+                        <option value="小一">國小一年級</option>
+                        <option value="小二">國小二年級</option>
+                        <option value="小三">國小三年級</option>
+                        <option value="小四">國小四年級</option>
+                        <option value="小五">國小五年級</option>
+                        <option value="小六">國小六年級</option>
+                        <option value="國一">國中一年級</option>
+                        <option value="國二">國中二年級</option>
+                        <option value="國三">國中三年級</option>
+                        <option value="高一">高中一年級</option>
+                        <option value="高二">高中二年級</option>
+                        <option value="高三">高中三年級</option>
+                    </select>
+                </fieldset>
+                <fieldset class="class-type-checkbox">
+                    <label for="class-type">班制選擇：</label>
+                    <div class="form-checkbox">
+                        <input type="checkbox" name="data[小班制兒美班]" id="class-type" value="V">小班制兒美班
+                        <input type="checkbox" name="data[英文家教班]" id="class-type" value="V">英文家教班<br>
+                        <input type="checkbox" name="data[數學家教班]" id="class-type" value="V">數學家教班
+                        <input type="checkbox" name="data[國小安親部]" id="class-type" value="V">國小安親部
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="student-contact">聯絡電話：
+                    </label>
+                    <input type="tel" name="data[家長聯絡電話]" id="student-contact" placeholder="請輸入手機號碼" required>
+                </fieldset>
+                <fieldset>
+                    <label for="student-email">聯絡信箱：</label>
+                    <input type="email" name="data[信箱]" id="student-email" placeholder="請輸入email">
+                </fieldset>
+                <fieldset>
+                    <label for="question">詢問內容：</label>
+                    <textarea id="question" name="data[詢問內容]" placeholder="請輸入內容。"></textarea>
+
+                </fieldset>
+                <input type="submit" value="送出表單" class="submit-button">
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>聯絡我們</p>
-        <a href="https://goo.gl/maps/CxEszNs1QTCbbT4Z8">雲林縣斗六市武陵街60號</a>
-        <a href="tel:+886933064228">0933 064 228</a>
-        <a href="mailto:connie97040930@gmail.com">connie97040930@gmail.com</a>
+        <div class="footer-list">
+            <a href="https://goo.gl/maps/CxEszNs1QTCbbT4Z8"><i class="fa-solid fa-house"></i><br>雲林縣斗六市武陵街60號</a>
+            <a href="tel:+886933064228"><i class="fa-solid fa-phone"></i><br>0933 064 228</a>
+            <a href="mailto:connie97040930@gmail.com"><i class="fa-solid fa-envelope"></i><br>connie97040930@gmail.com</a>
+        </div>
+        <br><br><p>Copyright © 康文英語家教中心</p>
     </footer>
+    <!-- javascript -->
+    <script src="index.js" charset="utf-8"></script>
+    <!-- side button -->
+    <a href="#topbar" class="side-button" id="up" ><i class="fa-solid fa-circle-up"></i></i></a>
+    <a href="https://www.instagram.com/kangwen_2020/" class="side-button" id="ig" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100064363891632" class="side-button" id="fb" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/71d797aa33.js" crossorigin="anonymous"></script>
 </body>
 </html>
