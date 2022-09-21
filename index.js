@@ -13,3 +13,7 @@ var form = document.getElementById('sheetdb-form');
             document.getElementById("sheetdb-form").reset();
           });
         });
+$("#sidebarButton").click(function(){
+  $("#sidebarButton").toggleClass("transform");
+  $("#sidebar").slideToggle();
+}) ;

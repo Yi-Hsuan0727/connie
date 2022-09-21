@@ -59,7 +59,6 @@ a{
 body{
     margin: 0 auto;
     width: auto;
-	padding-top: 30px;
 }
 h2, h3, p, a{
 	font-family:var(--serif);
@@ -90,11 +89,16 @@ h1 img{
 .orange{
     background: var(--main-color);
 }
-nav{
-	padding: 0 0 10px 20px;
+#topbar{
+	padding: 20px 20px 10px 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background: #fff;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	box-shadow: 0 2px 8px rgb(43, 43, 43);
 }
 nav ul{
 	display: flex;
@@ -110,6 +114,43 @@ nav li a:hover{
 	color: var(--main-color);
 	border-bottom: 6px solid var(--main-color);
 }
+#top-bar-list{
+	margin-right: 30px;
+}
+/* sidebar-button */
+#sidebarButton{
+	display: none;
+	font-size: 25px;
+	border:none;
+	background: transparent;
+	margin-right: 25px;
+}
+.transform{
+	transform: rotate(90deg);
+}
+/* side bar */
+#sidebar{
+	display: none;
+	background: #fff;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 1;
+	box-shadow: 3px 0px 5px rgb(85, 85, 85);
+	padding-top: 100px;
+	animation: MoveToRight 1s linear;
+}
+#sidebar li a{
+	list-style-type: circle;
+	display: block;
+	padding: 6px 0;
+	margin: 20px 60px;
+	color: #000;
+}
+#sidebar li a:hover{
+	border-bottom: 4px solid var(--main-color);
+}
 /* main */
 /* main img */
 h2{
@@ -121,18 +162,20 @@ h2{
 	font-size: 25px;
 	text-shadow: 2px 2px 5px #000;
 	font-weight: bold;
+	margin-top: 20px;
 }
 .main-img{
 	overflow: hidden;
 	height: 80vh;
 	position: relative;
+	padding-top: 50px;
 }
 .main-img img{
 	filter: blur(3px) grayscale(20%);
 }
 .go-to-form{
 	position: absolute;
-	top:50%;
+	top:55%;
 	left:40px;
 	background: var(--main-color);
 	border: var(--main-color) solid 2px;
@@ -295,13 +338,19 @@ footer a:hover{
 	h2{
 		font-size: 16px;
 	}
+	#top-bar-list{
+		display: none;
+	}
+	#sidebarButton{
+		display: block;
+	}
 	.go-to-form{
 		font-size: 0.8rem;
 		margin-top: 35px;
 		padding: 8px;
 	}
 	h3{
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 	.main-img{
 		height: auto;
@@ -326,4 +375,11 @@ footer a:hover{
 	.footer-list a{
 		margin-bottom: 10px;
 	}
+}
+/* animation */
+@keyframes MoveToRight{
+	from{left:-100px;
+		opacity:0;}
+	to{left:0;
+		opacity: 1;}
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
     <!-- style sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav id="topbar">
         <h1>
@@ -26,23 +28,28 @@
                 <span class="english-title">KAN WEN</span>
             </a>
         </h1>
-        <ul id="sidebar">
+        <button id="sidebarButton"><i class="fa-solid fa-bars"></i></button>
+        <ul id="top-bar-list">
             <li><a href="#student-form">表單填寫</a></li>
             <li><a href="">聯絡我們</a></li>
         </ul>
     </nav>
+    <ul id="sidebar">
+        <li><a href="#student-form">表單填寫</a></li>
+        <li><a href="">聯絡我們</a></li>
+    </ul>
     <main class="container">
         <div class="main-img">
             <img src="images/topimg.jpg" alt="nav-img" width="100%" height="auto">
-                <h2>Knowledge can change your fate, <br>
-                    and English can accomplish your future.<br>
-                    「知識改變命運，英文改變未來。」</h2>
-                <a href="#student-form" class="go-to-form">立即報名課程</a>
+            <h2>Knowledge can change your fate, <br>
+                and English can accomplish your future.<br>
+                「知識改變命運，英文改變未來。」</h2>
+            <a href="#student-form" class="go-to-form">立即報名課程</a>
         </div>
-        <section class="orange"></section>
+        <!-- <section class="orange"></section>
         <section></section>
         <section class="orange"></section>
-        <section></section>
+        <section></section> -->
         <!-- form -->
         <section id="student-form">
             <h3>表單填寫</h3>
@@ -105,17 +112,25 @@
         <div class="footer-list">
             <a href="https://goo.gl/maps/CxEszNs1QTCbbT4Z8"><i class="fa-solid fa-house"></i><br>雲林縣斗六市武陵街60號</a>
             <a href="tel:+886933064228"><i class="fa-solid fa-phone"></i><br>0933 064 228</a>
-            <a href="mailto:connie97040930@gmail.com"><i class="fa-solid fa-envelope"></i><br>connie97040930@gmail.com</a>
+            <a href="mailto:connie97040930@gmail.com"><i
+                    class="fa-solid fa-envelope"></i><br>connie97040930@gmail.com</a>
         </div>
-        <br><br><p>Copyright © 康文英語家教中心</p>
+        <br><br>
+        <p>Copyright © 康文英語家教中心</p>
     </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
     <!-- javascript -->
     <script src="index.js" charset="utf-8"></script>
     <!-- side button -->
-    <a href="#topbar" class="side-button" id="up" ><i class="fa-solid fa-circle-up"></i></i></a>
-    <a href="https://www.instagram.com/kangwen_2020/" class="side-button" id="ig" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=100064363891632" class="side-button" id="fb" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#topbar" class="side-button" id="up"><i class="fa-solid fa-circle-up"></i></i></a>
+    <a href="https://www.instagram.com/kangwen_2020/" class="side-button" id="ig" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100064363891632" class="side-button" id="fb" target="_blank"><i
+            class="fa-brands fa-facebook"></i></a>
     <!-- icon -->
     <script src="https://kit.fontawesome.com/71d797aa33.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
