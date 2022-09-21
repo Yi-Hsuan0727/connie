@@ -232,10 +232,6 @@ nav li a:hover {
 	color: #000;
 }
 
-.transform {
-    transform: rotate(90deg);
-}
-
 /* side bar */
 #sidebar {
     display: none;
@@ -243,9 +239,9 @@ nav li a:hover {
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
-    box-shadow: 3px 0px 5px rgb(85, 85, 85);
+    box-shadow: -3px 0px 5px rgb(85, 85, 85);
     padding-top: 100px;
     animation: MoveToRight 1s linear;
 }
@@ -262,6 +258,9 @@ nav li a:hover {
     border-bottom: 4px solid var(--main-color);
 }
 
+.blur{
+	filter: blur(3px);
+}
 /* main */
 /* main img */
 h2 {
@@ -540,12 +539,12 @@ footer a:hover {
 /* animation */
 @keyframes MoveToRight {
     from {
-        left: -100px;
+        right: -100px;
         opacity: 0;
     }
 
     to {
-        left: 0;
+        right: 0;
         opacity: 1;
     }
 }

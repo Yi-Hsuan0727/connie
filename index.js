@@ -14,6 +14,8 @@ form.addEventListener("submit", e => {
   });
 });
 $("#sidebarButton").click(function () {
-  $("#sidebarButton").toggleClass("transform");
+  $("#sidebarButton i").toggleClass("fa-bars");
+  $("#sidebarButton i").toggleClass("fa-xmark");
   $("#sidebar").slideToggle();
+  $("main").toggleClass("blur");
 });
