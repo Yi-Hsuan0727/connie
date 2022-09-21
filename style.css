@@ -158,15 +158,17 @@ a {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000;
     margin: 20px;
+	font-weight: bold;
 }
 
 h4{
 	font-size: 20px;
 	font-weight: bold;
 }
+
 /* nav bar */
 h1 {
     display: inline;
@@ -295,10 +297,10 @@ h2 {
     top: 55%;
     left: 40px;
     background: var(--main-color);
-    border: var(--main-color) solid 2px;
+    border: #fff solid 2px;
     border-radius: 4px;
     font-size: 1.2rem;
-    padding: 10px;
+    padding: 16px;
     margin-top: 20px;
     box-shadow: 1px 3px 6px rgb(65, 65, 65);
     color: #fff;
@@ -311,6 +313,12 @@ h2 {
 
 /* introduction */
 .introduction{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 60px 0;
+}
+.intro{
 	display: flex;
 	justify-content: center;
 	margin: 30px 0;
@@ -340,6 +348,10 @@ h2 {
 	padding: 0 30px;
 	font-family: var(--serif);
 }
+.feature-list h3{
+	color: #fff;
+}
+
 .feature i{
 	font-size: 80px;
 	margin: 10px;
@@ -368,6 +380,10 @@ h2 {
 #student-form p {
     color: var(--main-color);
     font-size: 0.8rem;
+}
+
+#student-form h3{
+	color: var(--main-color);
 }
 
 form {
@@ -541,11 +557,11 @@ footer a:hover {
     .go-to-form {
         font-size: 0.8rem;
         margin-top: 35px;
-        padding: 8px;
+        padding: 10px;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .main-img {
@@ -553,6 +569,10 @@ footer a:hover {
     }
 
 	.introduction{
+		flex-direction: column;
+	}
+
+	.intro{
 		flex-direction: column;
 	}
 
