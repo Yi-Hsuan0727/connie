@@ -22,4 +22,6 @@ $("#sidebarButton").click(function () {
 $("#sidebar a").click(function(){
   $("#sidebar").slideUp(1000);
   $("main").removeClass("blur");
+  $("#sidebarButton i").removeClass("fa-xmark");
+  $("#sidebarButton i").addClass("fa-bars");
 })
