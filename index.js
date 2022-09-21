@@ -19,3 +19,7 @@ $("#sidebarButton").click(function () {
   $("#sidebar").slideToggle();
   $("main").toggleClass("blur");
 });
+$("#sidebar a").click(function(){
+  $("#sidebar").slideUp(1000);
+  $("main").removeClass("blur");
+})
