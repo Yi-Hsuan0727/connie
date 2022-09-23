@@ -28,23 +28,29 @@
         </h1>
         <button id="sidebarButton"><i class="fa-solid fa-bars"></i></button>
         <ul id="top-bar-list">
-            <li><a href="#student-form">表單填寫</a></li>
-            <li><a href="">聯絡我們</a></li>
+            <li><a href="#introduction">班級制度</a></li>
+            <li><a href="#feature-list">我們的特色</a></li>
+            <li><a href="#time-table">招生班級</a></li>
+            <li><a href="#student-form">報名表單</a></li>
+            <li><a href="#employee">徵才資訊</a></li>
         </ul>
     </nav>
     <ul id="sidebar">
-        <li><a href="#student-form">表單填寫</a></li>
-        <li><a href="">聯絡我們</a></li>
+        <li><a href="#introduction">班級制度</a></li>
+        <li><a href="#feature-list">我們的特色</a></li>
+        <li><a href="#time-table">招生班級</a></li>
+        <li><a href="#student-form">報名表單</a></li>
+        <li><a href="#employee">徵才資訊</a></li>
     </ul>
     <main class="container">
-        <div class="main-img">
+        <div id="main-img">
             <img src="images/topimg.jpg" alt="nav-img" width="100%" height="auto">
             <h2>Knowledge can change your fate, <br>
                 and English can accomplish your future.<br>
                 「知識改變命運，英文改變未來。」</h2>
             <a href="#student-form" class="go-to-form">立即報名課程</a>
         </div>
-        <section class="introduction">
+        <section id="introduction">
             <h3>班級制度</h3>
             <ul class="intro">
                 <li>
@@ -61,7 +67,7 @@
                 </li>
             </ul>
         </section>
-        <section class="feature-list">
+        <section id="feature-list">
             <h3>我們的特色</h3><hr>
             <ul class="feature">
                 <li>
@@ -81,7 +87,7 @@
                 </li>
             </ul>
         </section>
-        <section class="time-table">
+        <section id="time-table">
             <h3>招生班級</h3>
             <table>
                 <tr>
@@ -149,7 +155,7 @@
             </ul>
         </section>
         <section id="student-form">
-            <h3>表單填寫</h3>
+            <h3>報名表單</h3>
             <form action="https://sheetdb.io/api/v1/zohu81rlheoq5" method="post" id="sheetdb-form">
                 <p>若欲報名課程、詢問相關問題，歡迎填寫以下表單，Connie老師將會與您聯繫。</p>
                 <hr>
@@ -204,6 +210,9 @@
                 <input type="submit" value="送出表單" class="submit-button">
             </form>
         </section>
+        <section id="employee">
+            <h3>徵才資訊</h3>
+        </section>
     </main>
     <footer>
         <div class="footer-list">
@@ -215,17 +224,17 @@
         <br><br>
         <p>Copyright © 康文英語家教中心</p>
     </footer>
+    <!-- side button -->
+    <a href="#main-img" class="side-button" id="up"><i class="fa-solid fa-circle-up"></i></i></a>
+    <a href="https://www.instagram.com/kangwen_2020/" class="side-button" id="ig" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100064363891632" class="side-button" id="fb" target="_blank"><i
+            class="fa-brands fa-facebook"></i></a>    
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
     <!-- javascript -->
     <script src="index.js" charset="utf-8"></script>
-    <!-- side button -->
-    <a href="#topbar" class="side-button" id="up"><i class="fa-solid fa-circle-up"></i></i></a>
-    <a href="https://www.instagram.com/kangwen_2020/" class="side-button" id="ig" target="_blank"><i
-            class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=100064363891632" class="side-button" id="fb" target="_blank"><i
-            class="fa-brands fa-facebook"></i></a>
     <!-- icon -->
     <script src="https://kit.fontawesome.com/71d797aa33.js" crossorigin="anonymous"></script>
 </body>

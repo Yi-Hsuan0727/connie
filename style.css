@@ -288,14 +288,14 @@ h2 {
     margin-top: 20px;
 }
 
-.main-img {
+#main-img {
     overflow: hidden;
     height: 80vh;
     position: relative;
     padding-top: 50px;
 }
 
-.main-img img {
+#main-img img {
     filter: blur(3px) grayscale(20%);
 }
 
@@ -319,7 +319,7 @@ h2 {
 }
 
 /* introduction */
-.introduction{
+#introduction{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -337,13 +337,22 @@ h2 {
 	width: 250px;
     height: 250px;
 	margin: 20px;
-    border-radius: 50%;
     padding: 0;
-    object-fit: cover;}
+    object-fit: cover;
+    box-shadow: 3px 7px 3px rgb(84, 84, 84);
+    border-radius: 50%;
+}
 
-
+.intro img:hover{
+    margin-top: 12px;
+    box-shadow: 3px 3px 3px rgb(84, 84, 84);
+    border: var(--main-color) solid 6px;
+}
+.intro img:hover+h4{
+    color: var(--main-color);
+}
 /* feature-list */
-.feature-list{
+#feature-list{
 	background: var(--main-color);
 	text-align: center;
 	padding: 30px 0;
@@ -358,14 +367,14 @@ h2 {
 	padding: 0 30px;
 	font-family: var(--serif);
 }
-.feature-list h3{
+#feature-list h3{
 	color: #fff;
     background-image: linear-gradient(0deg, var(--main-color) 50%,transparent 50.1%);
     text-align: center;
     margin-bottom: 5px;
 }
 
-.feature-list hr{
+#feature-list hr{
     width: 30%;
     border: #fff solid 1px;
 }
@@ -384,7 +393,7 @@ h2 {
 }
 
 /* time table */
-.time-table{
+#time-table{
     text-align: center;
     color: var(--main-color);
     padding: 60px 0;
@@ -397,7 +406,7 @@ h2 {
     margin: 0 10px;
 }
 
-.time-table::before{
+#time-table::before{
     content: " ";
     background: url(images/logo_logo.png) no-repeat 50% 50%;
     background-size: 500px 500px;
@@ -409,30 +418,30 @@ h2 {
     opacity: 0.2;
 }
 
-.time-table h3{
+#time-table h3{
     color: var(--main-dark-color);;
 }
 
-.time-table th{
+#time-table th{
     font-weight: bold;
     font-size: 18px;
     border-bottom: 3px solid var(--main-color);
 }
 
-.time-table td{
+#time-table td{
     border-top: var(--main-dark-color) solid 1px;
 }
 .time{
     color: var(--main-color);
 }
 
-.time-table td, .time-table th{
+#time-table td, #time-table th{
     width: 100px;
     padding: 10px;
     color: var(--main-dark-color);
 }
 
-.time-table ul{
+#time-table ul{
     text-align: left;
     margin-top: 20px;
     list-style-type: disc;
@@ -638,11 +647,11 @@ footer a:hover {
         font-size: 1.8rem;
     }
 
-    .main-img {
+    #main-img {
         height: auto;
     }
 
-	.introduction{
+	#introduction{
 		flex-direction: column;
 	}
 
@@ -650,21 +659,21 @@ footer a:hover {
 		flex-direction: column;
 	}
 
-    .time-table::before{
+    #time-table::before{
         background-size:250px 250px;
     }
 
-    .time-table td, .time-table th{
+    #time-table td, #time-table th{
         width: 60px;
         font-size: 12px;
         padding: 5px 2px;
     }
 
-    .time-table li{
+    #time-table li{
         font-size: 14px;
     }
 
-    .time-table ul{
+    #time-table ul{
         padding: 8px;
     }
 

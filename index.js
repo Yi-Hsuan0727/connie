@@ -20,7 +20,7 @@ $("#sidebarButton").click(function () {
   $("main").toggleClass("blur");
 });
 $("#sidebar a").click(function(){
-  $("#sidebar").slideUp(1000);
+  $("#sidebar").slideUp(500);
   $("main").removeClass("blur");
   $("#sidebarButton i").removeClass("fa-xmark");
   $("#sidebarButton i").addClass("fa-bars");
