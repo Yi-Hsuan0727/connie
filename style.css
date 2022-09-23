@@ -542,6 +542,39 @@ textarea:hover {
     border: var(--main-color) solid 2px;
     color: var(--main-color);
 }
+/* employee */
+#employee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 60px 30px;
+    font-family: var(--serif);
+    line-height: 1.5;
+}
+
+#employee img{
+    width: 200px;
+    height: auto;
+}
+
+.job-list{
+    display: flex;
+    justify-content: center;
+}
+
+.job{
+    box-shadow: 1px 3px 3px gray;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.job li{
+    list-style-type: disc;
+    list-style-position: inside;
+}
 
 /* footer */
 footer {
