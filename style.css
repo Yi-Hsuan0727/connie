@@ -657,7 +657,7 @@ footer a:hover {
     .time-table td, .time-table th{
         width: 60px;
         font-size: 12px;
-        padding: 5px;
+        padding: 5px 2px;
     }
 
     .time-table li{
