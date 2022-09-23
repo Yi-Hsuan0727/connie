@@ -341,6 +341,48 @@ h2 {
     padding: 0;
     object-fit: cover;}
 
+
+/* feature-list */
+.feature-list{
+	background: var(--main-color);
+	text-align: center;
+	padding: 30px 0;
+	width: 100%;
+	color: #fff;
+}
+.feature{
+	display: flex;
+	justify-content: center;
+	align-items:flex-start;
+	line-height: 1.5;
+	padding: 0 30px;
+	font-family: var(--serif);
+}
+.feature-list h3{
+	color: #fff;
+    background-image: linear-gradient(0deg, var(--main-color) 50%,transparent 50.1%);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.feature-list hr{
+    width: 30%;
+    border: #fff solid 1px;
+}
+
+.feature i{
+	font-size: 80px;
+	margin: 10px;
+}
+.feature li{
+	margin: 30px 40px;
+	width: 100%;
+}
+.feature p{
+	font-size: 14px;
+	margin: 10px 20px;
+}
+
 /* time table */
 .time-table{
     text-align: center;
@@ -398,46 +440,6 @@ h2 {
     border: var(--main-color) solid 1.5px;
     padding: 16px;
     color: var(--main-color);
-}
-/* feature-list */
-.feature-list{
-	background: var(--main-color);
-	text-align: center;
-	padding: 30px 0;
-	width: 100%;
-	color: #fff;
-}
-.feature{
-	display: flex;
-	justify-content: center;
-	align-items:flex-start;
-	line-height: 1.5;
-	padding: 0 30px;
-	font-family: var(--serif);
-}
-.feature-list h3{
-	color: #fff;
-    background-image: linear-gradient(0deg, var(--main-color) 50%,transparent 50.1%);
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.feature-list hr{
-    width: 30%;
-    border: #fff solid 1px;
-}
-
-.feature i{
-	font-size: 80px;
-	margin: 10px;
-}
-.feature li{
-	margin: 30px 40px;
-	width: 100%;
-}
-.feature p{
-	font-size: 14px;
-	margin: 10px 20px;
 }
 
 /* form */
@@ -660,6 +662,10 @@ footer a:hover {
 
     .time-table li{
         font-size: 14px;
+    }
+
+    .time-table ul{
+        padding: 8px;
     }
 
 	.feature{
