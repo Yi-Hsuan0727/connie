@@ -666,6 +666,11 @@ footer a:hover {
         display: none;
     }
 
+    #main-img img{
+        height: 500px;
+        object-fit: cover;
+    }
+
     #sidebarButton {
         display: block;
     }
@@ -678,10 +683,6 @@ footer a:hover {
 
     h3 {
         font-size: 1.8rem;
-    }
-
-    #main-img {
-        height: auto;
     }
 
 	#introduction{
