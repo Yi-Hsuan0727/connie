@@ -162,7 +162,10 @@ h3 {
     color: #000;
     margin: 20px;
 	font-weight: bold;
-	text-decoration:overline;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, var(--main-color) 50%,transparent 50.1%);
+    background-position: left 0 bottom 50%;
 }
 
 h4{
@@ -318,20 +321,22 @@ h2 {
 	align-items: center;
 	flex-direction: column;
 	margin: 60px 0;
+    text-align: center;
 }
 .intro{
 	display: flex;
 	justify-content: center;
 	margin: 30px 0;
-	text-align: center;
 	font-family: var(--serif);
+    position: relative;
 }
 .intro img{
-	max-width: 200px;
-	max-height: 200px;
-	border-radius: 100%;
+	width: 250px;
+    height: 250px;
 	margin: 20px;
-}
+    border-radius: 50%;
+    padding: 0;
+    object-fit: cover;}
 
 /* feature-list */
 .feature-list{
@@ -351,6 +356,12 @@ h2 {
 }
 .feature-list h3{
 	color: #fff;
+    background-image: linear-gradient(0deg, var(--main-color) 50%,transparent 50.1%);
+    text-align: center;
+}
+
+.feature-list hr{
+    width: 40%;
 }
 
 .feature i{
@@ -383,9 +394,6 @@ h2 {
     font-size: 0.8rem;
 }
 
-#student-form h3{
-	color: var(--main-color);
-}
 
 form {
     background: #fff;
