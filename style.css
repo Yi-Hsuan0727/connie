@@ -351,6 +351,20 @@ h2 {
     align-items: center;
     font-family: var(--serif);
     line-height: 1.5;
+    position: relative;
+    margin: 0 10px;
+}
+
+.time-table::before{
+    content: " ";
+    background: url(images/logo_logo.png) no-repeat 50% 50%;
+    background-size: 500px 500px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
 }
 
 .time-table h3{
@@ -360,6 +374,14 @@ h2 {
 .time-table th{
     font-weight: bold;
     font-size: 18px;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.time-table td{
+    border-top: var(--main-dark-color) solid 1px;
+}
+.time{
+    color: var(--main-color);
 }
 
 .time-table td, .time-table th{
@@ -368,23 +390,15 @@ h2 {
     color: var(--main-dark-color);
 }
 
-.time-table td{
-    border-top: var(--main-color) solid 2px;
-}
-.time{
-    color: var(--main-color);
-}
 .time-table ul{
     text-align: left;
     margin-top: 20px;
     list-style-type: disc;
     list-style-position: inside;
-    border: var(--main-color) solid 1px;
+    border: var(--main-color) solid 1.5px;
     padding: 16px;
+    color: var(--main-color);
 }
-/* .time-table tr:nth-of-type(odd){
-    color: var(--main-dark-color);
-} */
 /* feature-list */
 .feature-list{
 	background: var(--main-color);
@@ -405,10 +419,12 @@ h2 {
 	color: #fff;
     background-image: linear-gradient(0deg, var(--main-color) 50%,transparent 50.1%);
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .feature-list hr{
-    width: 40%;
+    width: 30%;
+    border: #fff solid 1px;
 }
 
 .feature i{
@@ -631,6 +647,19 @@ footer a:hover {
 	.intro{
 		flex-direction: column;
 	}
+
+    .time-table::before{
+        background-size:250px 250px;
+    }
+
+    .time-table td, .time-table th{
+        width: 60px;
+        font-size: 12px;
+    }
+
+    .time-table li{
+        font-size: 14px;
+    }
 
 	.feature{
 		flex-direction: column;
