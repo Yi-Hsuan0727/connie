@@ -276,16 +276,18 @@ nav li a:hover {
 }
 /* main */
 /* main img */
-h2 {
-    color: #fff;
+.main-img-content{
     position: absolute;
     top: 30%;
     left: 40px;
+}
+.main-img-content h2 {
+    color: #fff;
     line-height: 1.5;
     font-size: 25px;
     text-shadow: 2px 2px 5px #000;
     font-weight: bold;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #main-img {
@@ -300,15 +302,13 @@ h2 {
 }
 
 .go-to-form {
-    position: absolute;
-    top: 55%;
-    left: 40px;
+    text-align: center;
+    display: block;
     background: var(--main-color);
     border: #fff solid 2px;
     border-radius: 4px;
     font-size: 1.2rem;
     padding: 16px;
-    margin-top: 20px;
     box-shadow: 1px 3px 6px rgb(65, 65, 65);
     color: #fff;
 }
@@ -665,7 +665,7 @@ footer a:hover {
 
 /* RWD */
 @media (max-width:680px) {
-    h2 {
+    .main-img-content h2 {
         font-size: 16px;
     }
 
@@ -683,9 +683,8 @@ footer a:hover {
     }
 
     .go-to-form {
-        top:45%;
         font-size: 1rem;
-        padding: 16px 32px;
+        padding: 16px;
     }
 
     h3 {
