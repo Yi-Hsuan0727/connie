@@ -674,7 +674,7 @@ footer a:hover {
     }
 
     #main-img img{
-        height: 500px;
+        height: 110vh;
         object-fit: cover;
     }
 
@@ -683,9 +683,9 @@ footer a:hover {
     }
 
     .go-to-form {
-        font-size: 0.8rem;
-        margin-top: 35px;
-        padding: 10px;
+        top:45%;
+        font-size: 1rem;
+        padding: 16px 32px;
     }
 
     h3 {
