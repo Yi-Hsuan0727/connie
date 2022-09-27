@@ -667,7 +667,12 @@ footer a:hover {
 /* RWD */
 @media (max-width:680px) {
     .main-img-content h2 {
-        font-size: 16px;
+        font-size: 38px;
+        margin-right: 20px;
+    }
+
+    .main-img-content .chinese-h2{
+        font-size: 28px;
     }
 
     #top-bar-list {
