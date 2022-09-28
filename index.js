@@ -14,14 +14,12 @@ form.addEventListener("submit", e => {
   });
 });
 $("#sidebarButton").click(function () {
-  $("#sidebarButton i").toggleClass("fa-bars");
-  $("#sidebarButton i").toggleClass("fa-xmark");
+  $("#sidebarButton i").toggleClass("fa-bars").toggleClass("fa-xmark");
   $("#sidebar").slideToggle();
   $("main").toggleClass("blur");
 });
 $("#sidebar a").click(function(){
   $("#sidebar").slideUp(500);
   $("main").removeClass("blur");
-  $("#sidebarButton i").removeClass("fa-xmark");
-  $("#sidebarButton i").addClass("fa-bars");
+  $("#sidebarButton i").removeClass("fa-xmark").addClass("fa-bars");
 })

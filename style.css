@@ -138,9 +138,9 @@ table {
 :root {
     --main-color: #f0950b;
     --main-dark-color:#3c2400;
-    --chinese-title: 'Noto Serif JP', serif;
-    --english-title: 'Vollkorn', serif;
-    --serif: "微軟正黑體", serif;
+    --chinese-title: 'Noto Serif JP', sans-serif;
+    --english-title: 'Vollkorn', sans-serif;
+    --sans-serif: "微軟正黑體", sans-serif;
 }
 
 a {
@@ -157,7 +157,7 @@ h3,
 h4,
 p,
 a {
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
     font-weight: bold;
 }
 
@@ -222,7 +222,7 @@ nav ul {
 nav li a {
     color: var(--main-dark-color);
     padding: 10px;
-    font-family: var(--serif);s
+    font-family: var(--sans-serif);
     font-size: 14px;
 }
 
@@ -279,7 +279,7 @@ nav li a:hover {
 .main-img-content{
     position: absolute;
     top: 30%;
-    left: 40px;
+    left: 20px;
 }
 .main-img-content h2 {
     color: #fff;
@@ -311,6 +311,7 @@ nav li a:hover {
     padding: 16px;
     box-shadow: 1px 3px 6px rgb(65, 65, 65);
     color: #fff;
+    width: 40%;
 }
 
 .go-to-form:hover {
@@ -331,7 +332,7 @@ nav li a:hover {
 	display: flex;
 	justify-content: center;
 	margin: 30px 0;
-	font-family: var(--serif);
+	font-family: var(--sans-serif);
     position: relative;
 }
 .intro img{
@@ -403,7 +404,7 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
     line-height: 1.5;
     position: relative;
     margin: 0 10px;
@@ -465,7 +466,7 @@ nav li a:hover {
     align-items: center;
     flex-direction: column;
     padding: 80px 0;
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
     line-height: 1.8;
     box-shadow: 0px 1px 5px gray;
     background-image: url(images/memphis-colorful.png);
@@ -557,7 +558,7 @@ textarea:hover {
     align-items: center;
     text-align: center;
     margin: 60px 30px;
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
     line-height: 1.5;
 }
 
