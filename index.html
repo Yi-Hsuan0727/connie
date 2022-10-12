@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Vollkorn&display=swap" rel="stylesheet">
+    <!-- scroll aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- style sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -45,7 +47,7 @@
     <main class="container">
         <div id="main-img">
             <img src="images/topimg.jpg" alt="nav-img" width="100%" height="auto">
-            <div class="main-img-content">  
+            <div class="main-img-content" data-aos="fade-up" data-aos-duration="1500">  
                 <h2 class="english-title">Knowledge can change your fate, <br>
                     and English can accomplish your future.<p class="chinese-h2 chinese-title">
                     知識改變命運，英文改變未來。</p></h2>
@@ -55,15 +57,15 @@
         <section id="introduction">
             <h3>班級制度</h3>
             <ul class="intro">
-                <li>
+                <li data-aos="zoom-in" data-aos-duration="800">
                     <img src="images/christmas.jpg" alt="christmas">
                     <h4>國小英文家教班</h4>    
                 </li>
-                <li>
+                <li data-aos="zoom-in" data-aos-duration="800">
                     <img src="images/game.jpg" alt="game">
                     <h4>國中英文家教班</h4>    
                 </li>
-                <li>
+                <li data-aos="zoom-in" data-aos-duration="800">
                     <img src="images/highschool.jpg" alt="highschool">
                     <h4>高中英文家教班</h4>    
                 </li>
@@ -72,17 +74,17 @@
         <section id="feature-list">
             <h3>我們的特色</h3><hr>
             <ul class="feature">
-                <li>
+                <li data-aos="fade-up" data-aos-duration="800">
                     <i class="fa-solid fa-people-roof"></i>
                     <h4>小班制</h4>
                     <p>我們講究教學品質，並在乎每一個孩子，堅持小班制以提供最全面與細心的輔導。</p>    
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-duration="800">
                     <i class="fa-solid fa-person-circle-check"></i>
                     <h4>客製化</h4>
                     <p>讓孩子自選天數與時數，不讓補習成為孩子生活上的約束，而是學習上的幫手，自己規劃課程時間，同時培養孩子學習時間管理。</p>    
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-duration="800">
                     <i class="fa-solid fa-link"></i>
                     <h4>雙向溝通</h4>
                     <p>康文的老師用心傾聽學生的需求，並竭盡所能提供協助，不是單向的不斷傳授訊息與知識，而是「雙向」的「請聽、接收、給予並回饋」。</p>    
@@ -92,7 +94,7 @@
         <section id="time-table">
             <h3>招生班級</h3>
             <table>
-                <tr>
+                <tr data-aos="fade-up" data-aos-duration="800">
                     <th>Mon.</th>
                     <th>Tue.</th>
                     <th>Wed.</th>
@@ -100,7 +102,7 @@
                     <th>Fri.</th>
                     <th>Sat.</th>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up" data-aos-duration="800">
                     <td></td>
                     <td></td>
                     <td></td>
@@ -108,7 +110,7 @@
                     <td></td>
                     <td><span class="time">09:30<br>|<br>10:30</span><br>高年級兒美Ｂ</td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up" data-aos-duration="800">
                     <td></td>
                     <td></td>
                     <td></td>
@@ -116,7 +118,7 @@
                     <td></td>
                     <td><span class="time">13:00<br>|<br>15:00</span><br>國一家教班</td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up" data-aos-duration="800">
                     <td><span class="time">16:30<br>|<br>18:00</span><br>低年級兒美</td>
                     <td><span class="time">16:30<br>|<br>18:00</span><br>高年級兒美Ａ</td>
                     <td></td>
@@ -124,7 +126,7 @@
                     <td><span class="time">16:30<br>|<br>18:00</span><br>高年級兒美Ａ</td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up" data-aos-duration="800">
                     <td></td>
                     <td><span class="time">18:00<br>|<br>20:00</span><br>國三會考<br>進度＆複習班</td>
                     <td></td>
@@ -132,7 +134,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up" data-aos-duration="800">
                     <td><span class="time">19:30<br>|<br>21:30</span><br>國三會考<br>聽力班</td>
                     <td></td>
                     <td></td>
@@ -140,7 +142,7 @@
                     <td><span class="time">19:30<br>|<br>21:30</span><br>國二家教班</td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr data-aos="fade-up" data-aos-duration="800">
                     <td></td>
                     <td><span class="time">20:30<br>|<br>21:00</span><br>高年級兒美Ｂ</td>
                     <td></td>
@@ -216,7 +218,8 @@
             <h3>徵才資訊</h3>
             <img src="images/employee.svg" alt="employee">
             <div class="job-list">
-                <div class="job">
+                <div class="job" data-aos="fade-up"
+                data-aos-duration="800">
                     <h4>安親計時/正職夥伴</h4>
                     <ul>
                         <li>大學(含)以上學歷</li>
@@ -224,7 +227,8 @@
                         <li>需細心、耐心、喜愛小孩</li>
                     </ul>
                 </div>
-                <div class="job">
+                <div class="job" data-aos="fade-up"
+                data-aos-duration="800">
                     <h4>國小～高中英文/數理鐘點教師</h4>
                     <ul>
                         <li>大學(含)以上學歷(相關科系優先)</li>
@@ -251,7 +255,9 @@
     <a href="https://www.instagram.com/kangwen_2020/" class="side-button" id="ig" target="_blank"><i
             class="fa-brands fa-instagram"></i></a>
     <a href="https://www.facebook.com/profile.php?id=100064363891632" class="side-button" id="fb" target="_blank"><i
-            class="fa-brands fa-facebook"></i></a>    
+            class="fa-brands fa-facebook"></i></a> 
+    <!-- scroll aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>

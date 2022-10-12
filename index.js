@@ -23,3 +23,4 @@ $("#sidebar a").click(function(){
   $("main").removeClass("blur");
   $("#sidebarButton i").removeClass("fa-xmark").addClass("fa-bars");
 })
+AOS.init();
